@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!-- Picture and name -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-TH">T</i>
+                    
+                    <div class="logo-text">Tang Tonghor</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="Web.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Project.html">Project</a></li>
+                        <li><a href="Web.html">Web</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="pic/2.jpg " alt="">
+                </div>
+                <div class="hero-text">
+
+                    <h5 >Hi I'm <span class="input"></span></h5>
+                    <br>
+                    <h1 style="color: rgb(255, 255, 255);">Tang 
+                    <br> Tonghor</h1><br>
+                    <p class="p">A Proactive Management Information System student in the SETEC University with strong academic, good attitude and volunteering experience. Process strong leadership and communication skill with good English.  Keen to pursue a career in Graphic Designer and Programming.</p>
+                        <br>
+                        <div class="btngroup">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div><br>    
+                        <div class="socail">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div><br>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+    <script>
+        // Selecting elements for the toggle functionality
+let togglebtn = document.querySelector('.togglebtn');
+let nav = document.querySelector('.navlinks');
+let links = document.querySelectorAll('.navlinks li');
+
+togglebtn.addEventListener('click', function() {
+    this.classList.toggle("click");  
+    nav.classList.toggle("open");   
+});
+
+
+let type = new Typed('.input', {
+    strings: ['Graphic Design','UX UI Designer', 'Frontend Developer'],  
+    typeSpeed: 100,  
+    backSpeed: 100, 
+    backDelay: 100, 
+    loop: true,      
+});
+    </script>
+    <!-- About me -->
+</body>
+</html>
